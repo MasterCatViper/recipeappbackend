@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import { userRouter } from './routes/users.js'
 import { recipesRouter } from "./routes/recipes.js";
 import 'dotenv/config'
-const PORT = 3001 || process.env.PORT
+const PORT = process.env.PORT || 3001
 const MONGO_URL = process.env.MONGO_URL
 const app = express();
 
